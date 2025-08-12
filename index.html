@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Portfolio - Mattia Fanelli</title>
+  <link rel="stylesheet" href="style.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+<header class="header">
+  <nav class="nav">
+    <a class="navigationHome" href="#home">
+      <div class="logo">
+        <img
+          src="https://cdn.simpleicons.org/github/ffffff/64"
+          alt="GitHub Logo"
+          class="github-logo"
+        />
+        <span id="portfolioText">Portfolio Github</span>
+      </div>
+    </a>
+    <ul class="nav-links">
+      <li><a href="#about" id="navAbout">Chi Sono</a></li>
+      <li><a href="#skills" id="navSkills">Competenze</a></li>
+      <li><a href="#projects" id="navProjects">Progetti</a></li>
+      <li><a href="#contact" id="navContact">Contatti</a></li>
+    </ul>
+    <select id="languageSelector" class="language-selector">
+      <option value="it">IT</option>
+      <option value="en">EN</option>
+    </select>
+  </nav>
+</header>
+
+
+<section class="hero fade-in" id="home">
+  <div class="hero-content with-image">
+    <div class="profile-image">
+      <img class="immagine" src="immagini/FotoMe.png" alt="Mattia Fanelli" />
+    </div>
+    <div class="text-content">
+      <h1><span id="heroGreeting">Ciao, sono</span> <span class="highlight">Mattia</span></h1>
+      <p id="heroSubtitle">Junior Front End Developer | I Love Coding</p>
+      <div class="hero-buttons">
+        <a href="#projects" class="btn-primary" id="heroProjectsBtn">Scopri i miei progetti</a>
+        <a href="cv/Mattia.Fanelli_CV.pdf" class="btn-primary" download target="_blank" rel="noopener noreferrer" id="heroDownloadCV">
+          Scarica il mio CV
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="about" class="about fade-in">
+  <h2 class="top" id="aboutTitle">Chi Sono</h2>
+  <p id="aboutP1">
+    Sono Mattia Fanelli, Junior Front-End Developer con una forte motivazione a crescere nel mondo dello sviluppo web. 
+    Ho iniziato il mio percorso formativo imparando le basi di HTML, CSS, SCSS e JavaScript, per poi approfondire framework come Angular.
+  </p>
+  <p id="aboutP2">
+    Attraverso progetti personali e studio costante, ho acquisito competenze tecniche, affiancate da una buona sensibilità per l’usabilità e il design responsivo.
+  </p>
+  <p id="aboutP3">
+    Mi considero una persona curiosa, con una forte propensione all'apprendimento continuo e alla sperimentazione. Affronto con entusiasmo anche contesti nuovi o complessi, nella convinzione che ogni sfida sia un'opportunità per migliorare le mie competenze e crescere professionalmente.
+  </p>
+</section>
+
+
+  <section id="skills" class="skills fade-in">
+  <h2 id="skill">Competenze</h2>
+  <div class="skills-icons">
+    <div class="skill">
+      <img src="https://img.icons8.com/color/48/html-5--v1.png" alt="HTML5" />
+      <span>HTML5</span>
+    </div>
+    <div class="skill">
+      <img src="https://img.icons8.com/color/48/css3.png" alt="CSS3" />
+      <span>CSS3</span>
+    </div>
+    <div class="skill">
+      <img src="https://img.icons8.com/color/48/sass.png" alt="SCSS" />
+      <span>SCSS</span>
+    </div>
+    <div class="skill">
+      <img src="https://img.icons8.com/color/48/javascript--v1.png" alt="JavaScript" />
+      <span>JavaScript</span>
+    </div>
+    <div class="skill">
+      <img src="https://img.icons8.com/color/48/angularjs.png" alt="Angular" />
+      <span>Angular</span>
+    </div>
+  </div>
+</section>
+
+
+<section id="projects" class="projects fade-in">
+  <h2 id="projectsTitle">Progetti</h2>
+  <div class="project-list">
+
+    <!-- Progetto 1 -->
+    <article class="project-card">
+      <div class="project-content">
+        <img src="immagini/Calendario.PNG" alt="Immagine del progetto" class="project-image" />
+        <div class="project-text">
+          <h3 id="project1Title">Calendar App📅</h3>
+          <p class="project-description" id="project1Description">
+            Calendar App è un’app Angular con login via Firebase che consente agli utenti di gestire eventi personali in un calendario mensile. Gli eventi sono salvati in LocalStorage separatamente per ogni utente, permettendo aggiunte, modifiche e cancellazioni in modo semplice e sicuro.
+          </p>
+          <a href="https://github.com/Fane-dev/Calendar-App" target="_blank" rel="noopener noreferrer" class="project-link" id="project1Link">Guarda il progetto</a>
+        </div>
+      </div>
+    </article>
+
+    <!-- Progetto 2 -->
+    <article class="project-card">
+      <div class="project-content">
+        <img src="immagini/SushiWorld.PNG" alt="Immagine del progetto" class="project-image-sushi" />
+        <div class="project-text">
+          <h3 id="project2Title">Sushi World🍣</h3>
+          <p class="project-description" id="project2Description">
+            Sushi World è un'applicazione per la prenotazione di sushi, sviluppata con Java Sping Boot lato backend e SQL per la gestione del database. Gli utenti possono visualizzare il menu, scegliere i piatti desiderati e inviare l'ordine. Il sistema gestisce le prenotazioni in modo efficiente, memorizzando i dati in un database relazionale e offrendo un’interfaccia semplice e funzionale.
+          </p>
+          <a href="https://github.com/Fane-dev/Project-Sushi" target="_blank" rel="noopener noreferrer" class="project-link" id="project2Link">Guarda il progetto</a>
+        </div>
+      </div>
+    </article>
+
+    <div class="text-show-div">
+      <a href="https://github.com/Fane-dev?tab=repositories" target="_blank" rel="noopener noreferrer" class="text-show" id="viewAllRepos">
+        Vedi tutti i miei repository su GitHub
+      </a>
+    </div>
+  </div>
+</section>
+
+
+  <section id="contact" class="contact fade-in">
+    <h2 id="contactTitle">Contattami</h2>
+    <div class="contact-icons">
+      <a href="https://www.linkedin.com/in/mattia-fanelli/" target="_blank" rel="noopener noreferrer" class="icon-link" title="LinkedIn">
+        <img src="https://img.icons8.com/ios-filled/100/ffffff/linkedin.png" alt="LinkedIn" />
+      </a>
+      <a href="https://github.com/Fane-dev" target="_blank" rel="noopener noreferrer" class="icon-link" title="GitHub">
+        <img src="https://cdn.simpleicons.org/github/ffffff/100" alt="GitHub" />
+      </a>
+    </div>
+  </section>
+
+
+
+
+
+
+  <footer class="footer">
+    <p>© 2025 Mattia Fanelli.</p>
+  </footer>
+
+<script src="scripts/translate.js"></script>
+<script src="scripts/fadein.js"></script>
+</body>
+</html>
